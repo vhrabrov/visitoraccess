@@ -1,0 +1,118 @@
+@import '../../../styles/variables';
+@import '../../../styles/common';
+
+.wrapper {
+  max-width: 900px;
+  padding: 20px 30px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: black;
+
+  p {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+.rulesWrap {
+  width: 45%;
+
+  @media only screen and (max-width: $media-md - 1) {
+    width: 100%;
+  }
+}
+
+.rulesItem {
+  margin-bottom: 20px;
+
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.questionsWrap {
+  width: 45%;
+
+  @media only screen and (max-width: $media-md - 1) {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+.radioWrap {
+  margin-bottom: 30px;
+
+  label {
+    display: inline-flex;
+    align-items: center;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+  span {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
+  :global {
+    .ant-radio-inner {
+      width: 30px;
+      height: 30px;
+      border: 2px solid gray;
+
+      &:after {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $blue;
+      }
+    }
+
+    .ant-radio-checked .ant-radio-inner {
+      border: 2px solid $blue;
+    }
+  }
+}
+
+.messageWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: black;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  img {
+    margin: 20px auto 40px;
+    width: 60px;
+    height: 60px; 
+  }
+
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    color: $blue;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,241 @@
+@import '../../../styles/variables';
+@import '../../../styles/common';
+
+.mainWrapper {
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+  background: $gray;
+}
+
+.wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.link {
+  height: 40px;
+  width: 40px;
+  background: $blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.logoutWrap,
+.uncheckWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: black;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    color: black;
+  }
+}
+
+.logoutButtonWrap {
+  margin-top: 40px;
+
+  button {
+    margin: 0 20px;
+    border: none;
+    background: none;
+    color: $blue;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.inputWrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px 20px;
+  background: white;
+
+  .inputLabel:first-child {
+    margin-right: 70px;
+
+    @media only screen and (max-width: $media-sm) {
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: $media-sm) {
+    padding: 20px;
+  }
+}
+
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: bold;
+
+  span {
+    padding: 5px 10px;
+  }
+
+  @media only screen and (max-width: $media-sm) {
+    width: 100%;
+  }
+}
+
+.descriptionColumn {
+  padding: 4px 8px!important;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.name {
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 16px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
+
+  @media only screen and (max-width: $media-sm) {
+    padding-left: 20px;
+    margin-left: -50px;
+  }
+}
+
+.available {
+  &:before {
+    background: $green;
+  }
+}
+
+.notAvailable {
+  &:before {
+    background: $redTwo;
+  } 
+}
+
+.floor {
+  font-size: 16px;
+  span {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}
+
+.descriptionInfo {
+  max-width: 260px;
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  background: $gray;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.time {
+  width: 100px;
+  display: flex;
+  font-weight: bold;
+  margin-right: auto;
+
+  img {
+    width: 16px;
+    height: 22px;
+    margin-right: 10px;
+  }
+}
+
+.tableWrap {
+  width: 100%;
+  margin: 0 auto;
+  margin: 10px auto 50px;
+  
+  * {
+    color: black;
+  }
+}
+
+tbody {  
+
+  tr:not(.notClickedRow) {
+    cursor: pointer;
+  }
+
+  .notClickedRow {
+    opacity: 0.5;
+  }
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30vh auto 5vh;
+
+  span {
+    color: #b8b9bf;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+.rulesWrap {
+  max-width: 100%!important;
+  width: 100%!important;
+  padding-bottom: 0;
+
+  :global {
+  
+    .ant-modal-content {
+      min-height: 100vh;
+      border-radius: 0;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+  }
+}
+
+:global {
+  .ant-table-container {
+    padding: 0 20px;
+  }
+
+  tr.ant-table-expanded-row > td {
+    background: none;
+  }
+} 

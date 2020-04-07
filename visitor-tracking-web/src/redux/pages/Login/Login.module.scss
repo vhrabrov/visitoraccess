@@ -1,0 +1,58 @@
+@import '../../../styles/variables';
+@import '../../../styles/common';
+
+.wrapper {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+
+  @media only screen and (max-width: $media-sm) {
+    max-width: 85%;
+  }
+}
+
+.logoImg {
+  height: 100px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.inputTitle {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.loginBtn {
+  margin-top: 100px;
+  background: $blue;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.errorText {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  text-align: center;
+  font-size: 16px;
+  color: $red;
+}

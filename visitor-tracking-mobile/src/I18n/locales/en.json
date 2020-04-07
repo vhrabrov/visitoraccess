@@ -1,0 +1,46 @@
+{
+  "title": {
+    "about": "About",
+    "searchPatient": "Search Patient",
+    "rules": "Rules"
+  },
+  "links": {
+    "kandasoft": "www.kandasoft.com",
+    "softteco": "www.softteco.com"
+  },
+  "buttons": {
+    "login": "Log in",
+    "ok": "Ok",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "errors": {
+    "wrongCreads": "Wrong Username or Password",
+    "unknown": "Unknown error",
+    "noResult": "No Result Found",
+    "cantOpenLink":"Can't open link"
+  },
+  "placeholder": {
+    "username": "Username",
+    "password": "Password",
+    "patientName":"Patient name",
+    "floor": "Floor",
+  },
+  "description": {
+    "version": "Version 0.1",
+    "unbook": "The status of patient will be changed to available",
+    "survey": "Survey",
+    "success": "Success!",
+    "declined": "Declined!",
+    "visit": "You {{isCan}} visit {{name}}",
+    "floor": "{{floor}} floor",
+    "bookedBy": "by {{bookedPerson}}",
+    "yes": "Yes",
+    "no": "No",
+    "createdBy": "Created & Developed by"
+  },
+  "alert": {
+    "title": "Confirm Logout",
+    "message": "Are you sure you want to logout?"
+  }
+}
